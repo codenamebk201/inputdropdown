@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Custom Dropdown</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://localhost/timesupply/public/js/_js2/jquery.ui.mycombobox.js"></script>
+    <link href="jquery-ui.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        $(function() {
+            
+            $("#tags").mycombobox({
+                list: $("#val").text()
+            });
+            
+        });
+
+    </script>
+    <div id="val">{"2":"home","4":"play","6":"here"}</div>
+    <div id="val1">{"1":"home","2":"play","3":"here","4":"player","5":"there"}</div>
+    <br />
+    <div class="ui-widget">
+        <label for="tags">Tags: </label>
+        <input id="tags" name="tages" />
+    </div>
+
+    <br />
+    <br />
+
+</body>
+</html>
